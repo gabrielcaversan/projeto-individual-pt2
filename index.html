@@ -6,53 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Individual Newtab</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
 </head>
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <div>
-            <img src="./assets/img/logo.png" alt="Logo">
-        </div>
-        <h1>
-            Controle Financeiro
-        </h1>
-        <nav class="menu">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-lista">
-                <div class="menu-x">X</div>
-                <div class="menu-lista-conteudo">Cadastro de transações</div>
-                <div class="menu-lista-conteudo">Limpar dados</div>
+        <div class="cabecalho">
+            <div>
+                <img src="./assets/img/logo.png" alt="Logo">
             </div>
-        </nav>
+            <h1>
+                Controle Financeiro
+            </h1>
+            <nav class="menu">
+                <div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+                <div class="menu-lista">
+                    <div class="menu-x">X</div>
+                    <div class="menu-lista-conteudo">Cadastro de transações</div>
+                    <div>|</div>
+                    <div class="menu-lista-conteudo">Limpar dados</div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <!-- CONTAINER -->
     <div class="container">
         <!-- FORMULARIO -->
         <section class="container-um">
+            <div class="novatransacao">
+                <h2>Nova transação</h2>
+            </div>
+            
             <form class="formulario">
-                <label class="formulario-titulo" for="transacao">Tipo de transação</label>
-                <select class="formulario-conteudo" name="transacao" id="transacao">
-                    <option value="compra">Compra</option>
-                    <option value="venda">Venda</option>
-                </select>
+                <div>
+                    <label class="formulario-titulo" for="transacao">Tipo de transação</label>
+                    <select class="formulario-conteudo" name="transacao" id="transacao">
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                    </select>
+                </div>
 
-                <label class="formulario-titulo" for="mercadoria">Nome da mercadoria</label>
-                <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input">
+                <div>
+                    <label class="formulario-titulo" for="mercadoria">Nome da mercadoria</label>
+                    <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input">
+                </div>
 
-                <label class="formulario-titulo" for="valor">Valor</label>
-                <input class="formulario-conteudo" type="number" name="valor" id="valor" placeholder="R$ 0,00">
-
-                <button class="formulario-botao" type="submit">Adicionar transação</button>
+                <div>
+                    <label class="formulario-titulo" for="valor">Valor</label>
+                    <input class="formulario-conteudo" type="number" name="valor" id="valor" placeholder="R$ 0,00">
+                </div>
             </form>
+
+            <div>
+                <button class="formulario-botao" type="submit">Adicionar transação</button>
+            </div>
         </section>
         <!-- TABELA -->
         <section class="container-dois">
             <h2>Extrato de transações</h2>
             <div class="tabela">
                 <div class="tabela-conteudo">
-                    <div class="tabela-conteudo-titulo-operador">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="tabela-conteudo-titulo-operador">&nbsp;</div>
                     <div class="tabela-conteudo-titulo-mercadoria">Mercadoria</div>
                     <div class="tabela-conteudo-titulo-valor">Valor</div>
                 </div>

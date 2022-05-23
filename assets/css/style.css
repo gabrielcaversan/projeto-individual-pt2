@@ -7,20 +7,23 @@
 
 /* CABEÇALHO */
 header {
+    background-color: #E0E0E0;
+}
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 15px;
-    background-color: #E0E0E0;
 }
 
 /* IMAGEM DO CABEÇALHO */
-header img {
+.cabecalho img {
     width: 30px;
 }
 
 /* TITULO DO CABEÇALHO */
-header h1 {
+.cabecalho h1 {
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
@@ -32,7 +35,7 @@ header h1 {
     height: 2px;
     width: 18px;
     background-color: #333333;
-    margin-top: 3px;
+    margin-top: 2px;
 
 }
 
@@ -55,6 +58,7 @@ header h1 {
 
 .menu-lista-conteudo {
     padding: 5px;
+    padding-right: 25px;
 }
 
 .menu-lista-conteudo:hover {
@@ -67,17 +71,29 @@ header h1 {
     padding: 15px;
 }
 
+/* BARRA DO MENU */
+.menu-lista div:nth-child(3) {
+    display: none;
+}
+
 /* COMANDO PARA O MENU APARECER */
 .menu:hover .menu-lista {
     right: 0;
 }
 
 /* FORMULARIO */
+.novatransacao {
+    display: none;
+}
+
 .container {
     margin: 20px;
 }
 
-.formulario {
+.formulario ,
+.formulario div:nth-child(1),
+.formulario div:nth-child(2),
+.formulario div:nth-child(3) {
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +107,6 @@ header h1 {
 }
 
 .formulario-conteudo {
-    box-sizing: border-box;
     height: 32px;
     border: 1px solid #979797;
     border-radius: 4px;
@@ -101,12 +116,14 @@ header h1 {
 }
 
 /* BOTAO DO FORMULARIO */
-.formulario .formulario-botao {
+.formulario-botao {
     border: hidden;
     height: 32px;
     background-color: #333333;
     color: #FFFFFF;
     border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
 }
 
 /* BORDA INFERIOR DO FORMULARIO */
@@ -130,7 +147,7 @@ header h1 {
     width: 100%;
     font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 16px;
 }
 
 /* BORDAS DA TABELA */
@@ -149,6 +166,10 @@ header h1 {
 }
 
 /* TEXTOS DA TABELA */
+.tabela-conteudo-titulo-mercadoria{
+    padding-left: 12px;
+}
+
 .tabela-conteudo-titulo-valor {
     text-align: center;
     margin-left: 35%;
@@ -161,8 +182,7 @@ header h1 {
     padding-right: 10px;
 }
 
-.tabela-conteudo-mercadoria ,
-.tabela-conteudo-titulo-mercadoria {
+.tabela-conteudo-mercadoria {
     width: 49%;
     padding-left: 10px;
 }
@@ -172,10 +192,18 @@ header h1 {
     width: 2%;
 }
 
+.tabela-conteudo-valor,
+.tabela-conteudo-mercadoria,
+.tabela-conteudo-operador {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .tabela-conteudo-titulo-mercadoria,
 .tabela-conteudo-titulo-valor,
 .tabela-conteudo-total {
     font-weight: 700;
+    line-height: 22px;
 }
 
 /* TEXTO LUCRO */
