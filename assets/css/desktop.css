@@ -47,6 +47,10 @@
         font-weight: 600;
         line-height: 19px;
     }
+
+    .menu-lista-conteudo:hover {
+        background-color: #FFFFFF;
+    }
     
     /* CONTAINERS */
 
