@@ -218,6 +218,7 @@ header {
 .tabela-conteudo-valor-total span {
     display: flex;
     justify-content: right;
+    margin-top: -10px;
     font-size: 10px;
     font-weight: 400;
     line-height: 22px;
