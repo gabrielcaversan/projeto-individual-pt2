@@ -207,16 +207,30 @@ header {
 }
 
 /* TEXTO LUCRO */
-.tabela-conteudo-valor span {
+.tabela-conteudo-valor-total {
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tabela-conteudo-valor-total span {
+    display: flex;
+    justify-content: right;
     font-size: 10px;
     font-weight: 400;
     line-height: 22px;
 }
 
 /* RODAPE */
-footer {
-    position: fixed;
+.footer {
+    position: relative;
     bottom: 0;
+}
+
+footer {
+    position: absolute;
     height: 8px;
     background-color: #333333;
     width: 100%;
