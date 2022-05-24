@@ -66,6 +66,7 @@
 
     .container-um {
         width: 38%;
+        margin-bottom: 40px;
     }
 
     .container-dois {
@@ -111,10 +112,5 @@
 
     .tabela-conteudo-valor {
         width: 63%;
-    }
-
-    /* RODAPÉ */
-    .footer {
-        margin-top: 50px;
     }
 }
